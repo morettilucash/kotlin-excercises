@@ -5,7 +5,8 @@ import kotlin.test.assertTrue
 class User(
     val name: String,
     val age: Int,
-    val listOf: List<String>) { }
+    val listOf: List<String>
+) {}
 
 class ListToToMap() {
     val user1 = User("John", 18, listOf("Hiking"))
@@ -17,17 +18,11 @@ class ListToToMap() {
         // “to” keyword is being used here to create pairs of names and ages.
         // This method should return a map that preserves the entry order of
         // the elements in the array:
-        // val myMap = myList.map ()
-        val myMapToMap = myList.map { it.name to it.age }.toMap()
-        //println("myMap: $myMap")
-        println("myMapToMap: $myMapToMap")
-        //assertTrue(myMap.get("John") == 18)
-        //println("myMap.get(John) == 18):" + assertTrue(myMap.get("John") == 18))
+        val myMap = myList.map { it.name to it.age }.toMap()
+        assertTrue(myMap.get("John") == 18)
+        println("myMapToMap: $myMap")
 
     }
 
-    // init {
-    //     givenList_whenConvertToMap_thenResult()
-    // }
 
 }
