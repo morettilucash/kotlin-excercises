@@ -1,11 +1,17 @@
-//import examples.*
-import excercises.IsValidIdentifier
-import excercises.ListToToMap
-import excercises.ToExtension
-import excercises.NullSafety
-import excercises.Collections
+import excercises.Arrays
+// import excercises.PhraseOMatic
+// import excercises.IsValidIdentifier
+// import excercises.ListToToMap
+// import excercises.ToExtension
+// import excercises.NullSafety
+// import excercises.Collections
+// import examples.* // import all
 
 fun main(args: Array<String>) {
+
+    // Arrays..
+    Arrays()
+
     // excercise one:
     // IsValidIdentifier().checkNames()
 
@@ -15,10 +21,14 @@ fun main(args: Array<String>) {
     // excercise three:
     // ToExtension()
 
-    // excercise three:
+    // excercise four:
     // NullSafety()
 
     // collections:
-    Collections()
+    // Collections()
+
+    // phrase o matic
+    // PhraseOMatic()
+
 }
 
